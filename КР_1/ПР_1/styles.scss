@@ -1,0 +1,40 @@
+$color: #2c7be5;
+$padding: 16px;
+
+// Миксин - рамка карточки
+@mixin card-border {
+  border: 2px solid $color;
+  border-radius: 8px;
+}
+
+// Вложенный элемент карточки
+.card {
+  @include card-border;
+  max-width: 320px;
+  font-family: sans-serif;
+
+  // фотография
+  &__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  // тело карточки
+  &__body {
+    padding: $padding;
+
+    // название товара
+    &__title {
+      font-size: 20px;
+      font-weight: 700;
+      color: $color;
+    }
+
+    // описание товара
+    &__description {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  }
+}
