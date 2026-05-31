@@ -35,9 +35,9 @@ DELETE /api/products/:id  Удалить товар
 
 ## Атрибуты товара
 
-id          string  nanoid(6), авто
-name        string  Название      
-category    string  Категория      
-description string  Описание          
-price       number  Цена
-stock       number  Количество на складе 
+id          - string - nanoid(6), авто
+name        - string - Название      
+category    - string - Категория      
+description - string - Описание          
+price       - number - Цена
+stock       - number - Количество на складе 
